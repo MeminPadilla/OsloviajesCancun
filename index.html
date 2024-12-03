@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anuncio Oslo Viajes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    .banner {
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .overlay:hover {
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .overlay h1 {
+      font-size: 2em;
+      margin: 0.5em 0;
+    }
+
+    .overlay p {
+      font-size: 1.2em;
+      margin: 0.5em 0;
+    }
+
+    .button {
+      background: #007bff;
+      color: #fff;
+      padding: 0.8em 1.5em;
+      text-decoration: none;
+      font-size: 1em;
+      border-radius: 5px;
+      margin-top: 1em;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .button:hover {
+      background: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .overlay h1 {
+        font-size: 1.5em;
+      }
+      .overlay p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Imagen de fondo -->
+    <img src="https://via.placeholder.com/400x600" alt="Destino de Oslo Viajes" class="banner">
+    <!-- Superposición de contenido -->
+    <div class="overlay">
+      <h1>¡Tu próxima aventura te espera!</h1>
+      <p>15% de descuento en todos los destinos</p>
+      <p>Incluye asesoría gratuita</p>
+      <a href="https://www.osloviajes.com" class="button">Explorar ahora</a>
+    </div>
+  </div>
+</body>
+</html>
